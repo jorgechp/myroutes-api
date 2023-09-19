@@ -1,0 +1,9 @@
+allowed-origins: "https://myroutes.fly.dev, https://deploy-preview-*--myroutes.fly.dev"
+
+logging:
+    level:
+        org:
+            hibernate: error
+            springframework.core: error
+            springframework.web: error
+        root: error
