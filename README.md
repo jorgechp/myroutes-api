@@ -16,12 +16,17 @@ Backend for the MyRoutes projects based on Spring Boot including Spring REST, HA
 
 ## Features per Stakeholder
 
-| USER                | ADMIN                |
-|---------------------|----------------------|
-| Register            |                      |
-| Login               |                      |
-| Logout              |                      |
-|                     |                      |
+| USER                | REVIEWER             | ADMIN                     |
+|---------------------|----------------------|-----------------------    |
+| Register            | Remove route edition | Block user                |
+| Login               |                      | Add reviewer flag         |
+| Logout              |                      | Remove reviewer flag      |
+| Create route        |                      | Remove route              |
+| Edit route          |                      | Remove user               |
+| Post route  stats   |                      |                           |
+| See route           |                      |                           |
+| Search route        |                      |                           |
+| See route stats     |                      |                           |
 
 ## Entities Model
 
