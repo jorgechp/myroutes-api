@@ -1,15 +1,49 @@
 @startuml
 
-class User extends UriEntity implements UserDetails {
-  username : String
+class User implements UserDetails {
+  id : String
   password : String
   email : String
+  isReviwer : boolean
 }
 
-class UriEntity {
-  uri : String
+class Admin { }
+
+class RouteFollowed {
+  date : ZonedDateTime
+  duration : String
+  levelUp : String
+  levelDown : String
 }
 
-User "1" --right-- "*" Resource : owner <
+class Route {
+  title : String
+  description : String
+  type : String
+  creationDate : ZonedDateTime
+}
+
+class RouteVersion {
+  creationDate : ZonedDateTime
+}
+
+class Coordinate {
+  coordinate : String
+}
+
+class Waypoint {
+  title : String
+  description : String
+  type : String
+}
+
+User "1" <-left- "0..*" RouteFollowed : followedBy
+User "1" <-- "0..*" Route : createdBy
+User "1" <-- "0..*" RouteVersion : createdBy
+RouteFollowed "0..*" --> "1" Route: follows
+Route "1" <-right- "0..*" RouteVersion: versionOf
+RouteVersion "1" <-right- "0..*" Coordinate: partOf
+Coordinate "1" <-- "0..*" Waypoint: location
+User <|-right- Admin
 
 @enduml

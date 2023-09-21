@@ -30,5 +30,4 @@ Backend for the MyRoutes projects based on Spring Boot including Spring REST, HA
 
 ## Entities Model
 
-![EntityModelsDiagram](http://www.plantuml.com/plantuml/svg/5Sqn3W8X40NGtbFe0M1wgxNOJXEJZGT061SI6CZC9rvVjthbMmn1CLizNOh4EXDFhUSC3BiIQVZwlI3FzpJMs0KiyB4tUgMxMv-Rs_e7DusPR6YHtO7Rg05CBHXOQHKK5BP7JrpzEAA59Vtz0G00?v0)
-
+![EntityModelsDiagram](http://www.plantuml.com/plantuml/png/5Sqn3i8m30NGlQU00xJUcShG3IIaYWE4n11BYHCvtqBS7jZUzjQ1OF1QfgDeB9xOhHmoqCU9oC9xUGcoFtomnQPWnH9RfNkwpDjjd_VsnDbYflgnvk0nXovKWoXj2e7mkBR4PUd_OrfPqmzV?v0)
