@@ -1,7 +1,6 @@
 package cat.udl.eps.softarch.myroutes.domain;
 
 
-import com.fasterxml.jackson.annotation.JsonIdentityReference;
 import lombok.Data;
 
 import jakarta.persistence.*;
