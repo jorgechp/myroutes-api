@@ -3,10 +3,13 @@ package cat.udl.eps.softarch.myroutes.domain;
 
 import lombok.Data;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.EqualsAndHashCode;
+
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -14,8 +17,8 @@ import lombok.EqualsAndHashCode;
 public class Waypoint extends UriEntity<Long> {
 
     @Id
-    @GeneratedValue()
-    private long id;
+    @GeneratedValue
+    private Long id;
 
     @NotNull
     @NotBlank
