@@ -11,6 +11,10 @@ Feature: Register User
     And It has been created a user with username "user" and email "user@sample.app", the password is not returned
     And I can login with username "user" and password "password"
 
+  Scenario: Register new coordinate
+    When I register a new coordinate "4353453"
+    Then The response code is 201
+
   Scenario: Register existing username
     Given There is a registered user with username "user" and password "existing" and email "user@sample.app"
     And I'm not logged in
